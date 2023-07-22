@@ -1,8 +1,16 @@
 name: Actions Workflow
 
-on: 
-  repository_dispatch:
-    types: [build]
+on:
+  push:
+    branches:
+      - master 
+      - 'feature/*'
+      - 'feature/**'
+      - '!feature/featC'
+    tags:
+      - v1.*
+  #repository_dispatch:
+  #  types: [build]
   #schedule:
   #  - cron: "0/5 * * * *"
   #push:
