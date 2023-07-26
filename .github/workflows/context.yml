@@ -19,7 +19,7 @@ jobs:
         run: echo "$STEPS_CONTEXT"
       - name: Dump runner context
         env:
-          RUNNER_CONTEXT: ${{ toJson(runner) }}
+          RUNNER_CONTEXT: ${{ runner }}
         run: echo "$RUNNER_CONTEXT"
       - name: Dump strategy context
         env:
