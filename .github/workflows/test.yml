@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: echo a string
         run: echo "lala"
-      - name: 2 commands
+      - name: numerous commands
         env: 
           STEP_ENV2: env that is available only to this step
         run: |
