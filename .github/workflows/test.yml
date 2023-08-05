@@ -7,10 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
+        env: 
+          STEP_ENV: available only to this step
         run: echo "lala"
       - name: 2 commands
         run: |
           pwd
-          ls
+          ls -a
+          date
+          echo "STEP_ENV is ${STEP_ENV}"
 
       
