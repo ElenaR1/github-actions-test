@@ -1,0 +1,16 @@
+name: Test
+
+on: push
+
+jobs:
+  simple-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "lala"
+      - name: 2 commands
+        run: |
+          pwd
+          ls
+
+      
